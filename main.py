@@ -11,3 +11,9 @@ SSID = []
 for line in output.stdout.splitlines():
     if "All User Profile" in line:
         SSID.append(line.split(":")[1].strip())
+
+details = [] 
+
+# get the details for each SSID
+for name in SSID:
+    details.append(subprocess.run(["netsh", "wlan", "show", "profile", "name=" + name, "key=clear"], capture_output=True, text=True))
