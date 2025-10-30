@@ -1,14 +1,12 @@
-> **Note:** This project is for **personal and educational use only**. Do **not** use it to access networks or devices you don’t own or don’t have explicit permission to access.
+# wifi-password-extractor
 
-<br>
+> **Note:** This project is for **personal and educational use only**. Do **not** use it to access networks or devices you don’t own or don’t have explicit permission to access.
 
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org) [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 </div>
-
-# wifi-password-extractor
 
 Python script that lists all saved SSIDs and shows their stored passwords.
 
