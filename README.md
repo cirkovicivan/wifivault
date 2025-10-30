@@ -2,11 +2,11 @@
 
 <br>
 
-<center>
+<div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org) [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-</center>
+</div>
 
 # wifi-password-extractor
 
@@ -18,9 +18,9 @@ I used the built-in Python module `subprocess` to run `netsh`, the built-in Wind
 
 ## ⚙️Workflow
 
-<center>
+<div align="center">
     <img src="workflow.svg" alt="workflow" width="300" />
-</center>
+</div>
 
 ## 🚀Installation
 
