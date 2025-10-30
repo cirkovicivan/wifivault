@@ -1,4 +1,8 @@
+#!/usr/bin/env python3
+
 import subprocess
+
+print("wifi-password-extractor \n")
 
 # Runs the command "netsh wlan show profiles" and returns the output
 # text - converts the output from bytes to string
@@ -24,3 +28,5 @@ for index, item in enumerate(details):
     for line in item.stdout.splitlines():
         if "Key Content" in line:
             print("SSID: " + SSID[index] + "\nPassword: " + line.split(":")[1].strip()+"\n")
+
+input("Press enter to exit...")
