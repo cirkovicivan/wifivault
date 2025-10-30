@@ -17,3 +17,10 @@ details = []
 # get the details for each SSID
 for name in SSID:
     details.append(subprocess.run(["netsh", "wlan", "show", "profile", "name=" + name, "key=clear"], capture_output=True, text=True))
+
+# Extract the password from the output and display it to user
+# enumerate - pairs each item in the list with its index 
+for index, item in enumerate(details):
+    for line in item.stdout.splitlines():
+        if "Key Content" in line:
+            print("SSID: " + SSID[index] + "\nPassword: " + line.split(":")[1].strip()+"\n")
