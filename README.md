@@ -1,4 +1,4 @@
-# wifi-password-extractor
+# wifivault
 
 > **Note:** This project is for **personal and educational use only**. Do **not** use it to access networks or devices you don’t own or don’t have explicit permission to access.
 
